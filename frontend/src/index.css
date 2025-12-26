@@ -1,0 +1,64 @@
+/* src/index.css */
+
+/* 1. Make the Grid look professional (Subtle dots) */
+.react-flow__background {
+  background-color: #f7f9fb; /* Light grey/blue background */
+}
+
+/* 2. Style the Connection Lines (Edges) */
+.react-flow__edge-path {
+  stroke: #b1b1b7; /* Softer grey for lines */
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3300CC; /* Deep Purple when selected */
+}
+
+/* 3. Style the Handles (Connection Dots) */
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 2px solid #555;
+}
+
+.react-flow__handle:hover {
+  background: #3300CC; /* Purple on hover */
+  border-color: #3300CC;
+}
+
+/* 4. Controls (Zoom buttons) */
+.react-flow__controls {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.react-flow__controls-button {
+  border-bottom: 1px solid #eee;
+  background: white;
+  color: #555;
+}
+
+.react-flow__controls-button:hover {
+  background: #f4f4f4;
+  color: #3300CC;
+}
+.react-flow__handle {
+  z-index: 100; /* Force handle on top */
+  width: 10px; /* Make them slightly bigger */
+  height: 10px;
+}
+/* Force React Flow edges to be visible */
+/* Force React Flow edges to be visible */
+.react-flow__edge-path {
+  stroke: #555 !important;
+  stroke-width: 2px !important;
+}
+
+.react-flow__connection-path {
+  stroke: #555 !important;
+  stroke-width: 2px !important;
+}
